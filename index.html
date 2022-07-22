@@ -16,7 +16,11 @@
         meet new people and socialize as much as possible.
       </p>
       <div class="photo">
-        <img src="./CVPhoto.png" alt="This is a photo of me :))))" />
+        <picture>
+          <source media="(min-width: 650px)" srcset="CVPhoto.png" />
+          <source media="(min-width: 465px)" srcset="facebook.jpg" />
+          <img src="images/img-default.png" alt="a cute kitten" />
+        </picture>
       </div>
       <h3>
         <p>If you want further informations</p>
@@ -27,6 +31,18 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="form.html">LogIn</a></li>
       </ul>
+      <video
+        controls
+        muted
+        id="video"
+        width="1400px"
+        height="500px"
+        loop="loop"
+        muted="muted"
+      >
+        <source src="Muzica.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </header>
   </body>
 </html>

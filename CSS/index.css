@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+:root {
+  --main-color: #21295c;
+  --text-color: #;
+  --second-color: #6b6054;
+  --shadow: #000;
+  --a-color: #1c7293;
+  --background: #eff1ed;
+  --secondary-background: #d6dbd0;
+  --white: #fff;
+}
+
+.wrapper {
+  min-width: 100vw;
+  min-height: 100vh;
+  background: var(--second-color);
+}
+.title {
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: var(--white);
+  text-shadow: 2px 2px 3px var(--shadow);
+  background: var(--a-color);
+}
+
+.container {
+  width: 100vw;
+  background: var(--secondary-background);
+}
+
+.photo {
+  margin-right: 10px;
+  float: right;
+  border: 10px solid #000;
+  border-left: 10px solid #111;
+  border-bottom: 10px solid #222;
+  border-right: 10px solid #333;
+  border-radius: 5px;
+  box-shadow: inset 2px 1px 5px #000;
+}
+
+.photo picture {
+  border: 10px solid #fff;
+  border-top: 10px solid #ddd;
+  border-left: 10px solid #eee;
+  border-right: 10px solid #f0f0f0;
+  display: block;
+  box-shadow: 10px 0 50px #000;
+}
+
+@media screen and (max-width: 465px) {
+  .photo {
+    margin-right: 10px;
+    float: right;
+    border: 10px solid #000;
+    border-left: 10px solid #111;
+    border-bottom: 10px solid #222;
+    border-right: 10px solid #333;
+    border-radius: 5px;
+    box-shadow: inset 2px 1px 5px #000;
+  }
+
+  .photo picture {
+    border: 10px solid #fff;
+    border-top: 10px solid #ddd;
+    border-left: 10px solid #eee;
+    border-right: 10px solid #f0f0f0;
+    display: block;
+    box-shadow: 10px 0 50px #000;
+  }
+}
+
+h3 {
+  color: var(--main-color);
+}
+
+.name {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+h3 p {
+  text-align: center;
+}
+
+#text {
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 15px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+.links {
+  padding: 50px;
+  text-align: center;
+}
+
+.link-effect a {
+  color: var(--main-color);
+  margin: 0 20px;
+  padding: 10px 0;
+  position: relative;
+  transition: ease-out 0.3s 0.1s;
+  text-decoration: none;
+}
+
+.link-effect a::after {
+  height: 2px;
+  width: 100%;
+  background: white;
+  content: '';
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  transform: scaleX(0);
+  transition: 0.3s;
+}
+
+.link-effect a:hover::after {
+  transform: scaleX(1);
+}

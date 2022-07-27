@@ -6,36 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyCV</title>
     <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
-    <header class="wrapper">
-      <h1 class="title">This is a CV</h1>
-      <div class="container">
-        <div class="photo">
-          <picture>
-            <source media="(min-width: 650px)" srcset="CVPhoto.png" />
-            <source media="(min-width: 465px)" srcset="facebook.jpg" />
-            <img src="images/img-default.png" alt="a cute kitten" />
-          </picture>
+    <header id="home">
+      <nav class="navbar">
+        <div class="nav-center">
+          <div class="nav-header">
+            <button class="nav-toggle" type="button" id="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="./contact.html" class="nav-link scroll-link">contact</a></li>
+            <li><a href="./experience.html" class="nav-link scroll-link">experience</a></li>
+            <li><a href="./study.html" class="nav-link scroll-link">study</a></li>
+            <li><a href="./form.html" class="nav-link scroll-link">login</a></li>
+          </ul>
         </div>
-        <h3 class="name">Jurca Razvan Catalin</h3>
-        <p id="text">
-          Hi, my name is Jurca Razvan Catalin. I was born in Cluj-Napoca in
+      </nav>
+      <div class="hero">
+        <div class="hero-banner">
+          <div class="image">
+            <img src="./Images/CVPhoto.png" alt="Profile Photo" class="img">
+          </div>
+          <h3>personal portofolio</h3>
+          <h1>jurca razvan-catalin</h1>
+          <p>Hi, my name is Jurca Razvan Catalin. I was born in Cluj-Napoca in
           April so yeah I am an Aries. I consider myself a friendly person, who
-          likes to meet new people and socialize as much as possible.
-        </p>
-        <h3>
-          <p>If you want further informations</p>
-        </h3>
-        <section class="links">
-          <nav class="link-effect">
-            <a href="study.html">Studies</a></li>
-            <a href="experience.html">Experience</a>
-            <a href="contact.html">Contact</a>
-            <a href="form.html">LogIn</a></li>
-          </nav>
-        </section>
-        <video
+          likes to meet new people and socialize as much as possible.</p>
+        </div>
+      </div>
+    </header>
+    <video
           controls
           muted
           id="video"
@@ -43,10 +46,10 @@
           height="500px"
           loop="loop"
           muted="muted"
-        >
+    >
           <source src="Muzica.mp4" type="video/mp4" />
           Your browser does not support the video tag.
-        </video>
+    </video>
       </div>
     </header>
   </body>

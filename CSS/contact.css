@@ -290,6 +290,11 @@ p {
 .submit-btn {
   display: block;
   width: 100%;
+  border: none;
+  background: var(--background);
+  color: var(--a-color);
+  cursor: pointer;
+  text-transform: uppercase;
   padding: 0.7rem;
   border-bottom-left-radius: var(--radius);
   border-bottom-right-radius: var(--radius);

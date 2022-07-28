@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Contact</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -15,46 +15,110 @@
     <link rel="stylesheet" href="CSS/contact.css" />
   </head>
   <body>
-    <div class="form-group">
-      <div class="phone">
-        <span class="inputs">
-          <ul>
-            <li>
-              <p class="text">First Name</p>
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="First Name" name="" id="" />
-            </li>
-            <li>
-              <p class="text">Last Name</p>
-              <i class="fa-solid fa-user"></i>
-              <input type="text" placeholder="Last Name" name="" id="" />
-            </li>
-            <li>
-              <p class="text">Email</p>
-              <i class="fa-solid fa-envelope"></i>
-              <input type="email" placeholder="Email" name="" id="" />
-            </li>
-            <li>
-              <p class="text">Phone</p>
-              <i class="fa-solid fa-phone"></i>
-              <input type="number" placeholder="Phone" name="" id="" />
-            </li>
-            <li>
-              <p class="text">Address</p>
-              <i class="fa-solid fa-house"></i>
-              <input type="text" placeholder="Address" name="" id="" />
-            </li>
-            <li>
-              <p class="text">Additional Text</p>
-              <i class="fa-solid fa-pen-clip"></i>
-              <textarea name="" id="" cols="40" rows="10"></textarea>
-            </li>
-          </ul>
-        </span>
-        <div class="button">
-          <button class="btn"><span>Send</span></button>
+    <!-- 
+      ==================
+      Nav
+      ==================
+     -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <button class="nav-toggle" type="button" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="./index.html" class="nav-link scroll-link">home</a>
+          </li>
+          <li>
+            <a href="./experience.html" class="nav-link scroll-link"
+              >experience</a
+            >
+          </li>
+          <li><a href="./study.html" class="nav-link scroll-link">study</a></li>
+          <li><a href="./form.html" class="nav-link scroll-link">login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="contact">
+      <div class="section-center">
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-location-arrow"></i>
+              </span>
+              address
+            </h4>
+          </div>
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              email
+            </h4>
+            <h4 class="contact-text">razvanjurca00@yahooo.com</h4>
+          </div>
+          <div class="contact-item">
+            <h4 class="contact-title">
+              <span class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              phone
+            </h4>
+            <h4 class="contact-text">+40700000000</h4>
+          </div>
+        </div>
+        <article class="contact-form">
+          <h3>contact me</h3>
+          <form action="https://formspree.io/f/xvoleenr" method="post">
+            <div class="form-group">
+              <input
+                type="text"
+                placeholder="name"
+                class="form-control"
+                name="name"
+              />
+              <input
+                type="email"
+                placeholder="email"
+                class="form-control"
+                name="name"
+              />
+              <input
+                type="name"
+                placeholder="phone number"
+                class="form-control"
+                name="name"
+              />
+              <textarea
+                placeholder="message"
+                name="message"
+                class="form-control"
+                rows="5"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-btn button">submit here</button>
+          </form>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <a href="#" class="social-icon facebook">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="social-icon twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

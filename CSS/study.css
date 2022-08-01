@@ -27,11 +27,13 @@ body {
   color: var(--clr-grey);
   line-height: 1.5;
   font-size: 0.875rem;
+  list-style: none;
 }
 
 ul {
-  list-style-type: none;
+  list-style: none;
 }
+
 a {
   text-decoration: none;
 }
@@ -99,7 +101,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100vw;
   background: var(--white);
   box-shadow: var(--dark-shadow);
   z-index: 2;
@@ -107,7 +109,7 @@ p {
 }
 
 .nav-center {
-  width: 100%;
+  width: 100vw;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -151,7 +153,7 @@ p {
 
 .nav-link::after {
   height: 1px;
-  width: 100%;
+  width: 100vw;
   background: var(--a-color);
   content: '';
   position: absolute;
@@ -159,6 +161,12 @@ p {
   bottom: 0;
   transform: scaleX(0);
   transition: 0.3s;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .nav-link:hover::after {
@@ -200,16 +208,16 @@ p {
 
 .hero {
   background: var(--background);
-  min-width: 98vw;
+  min-width: 100vw;
   min-height: 85vh;
   padding-top: calc(100vh - 80vh);
 }
 
-.hero-center {
+.hero-center h1 {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  padding: 0 0 10px 0;
+  justify-content: center;
+  font-size: 4rem;
+  text-transform: uppercase;
 }
 
 .element {
@@ -218,33 +226,27 @@ p {
   margin: 10px;
   border-radius: var(--radius);
   transition: all 0.5s ease-in-out;
+  padding: 10px;
 }
 
 .element:hover {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.element h3 {
-  font-size: 2rem;
+.element h2 {
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 8px 8px 0 8px;
 }
 
-.elements {
-  margin: 0 0 0 10px;
-}
-
-.elements li {
-  margin: 10px 0;
-  cursor: pointer;
-}
-
-.time {
-  display: flex;
-  font-weight: 600;
+li h4 {
+  display: inline;
 }
 
 @media screen and (max-width: 600px) {
+  body {
+    min-width: 100vw;
+  }
   .hero-center {
     display: flex;
     flex-direction: column;
@@ -255,7 +257,6 @@ p {
   .element {
     width: 100vw;
     background: var(--white);
-    margin: 10px;
     border-radius: var(--radius);
     transition: all 0.5s ease-in-out;
   }
@@ -266,7 +267,7 @@ p {
 
   .line {
     height: 2px;
-    width: 95vw;
+    width: 90vw;
     background: var(--a-color);
     margin-bottom: 10px;
     padding-bottom: 2px;
@@ -284,44 +285,21 @@ p {
     position: relative;
     left: 150px;
   }
-}
 
-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.circles span {
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  background: #bbb;
-  border-radius: 50%;
-  margin: 0 10px;
-}
-
-.time {
-  position: relative;
-  right: 20px;
+  .details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media screen and (max-width: 400px) {
   .element {
-    width: 95vw;
+    width: 100vw;
     background: var(--white);
     margin: 10px;
     border-radius: var(--radius);
     transition: all 0.5s ease-in-out;
-  }
-
-  .circles {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  .time {
-    position: relative;
-    left: 150px;
   }
 }
 

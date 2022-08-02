@@ -272,6 +272,10 @@ p {
     padding-bottom: 2px;
   }
 
+  .show-links {
+    height: 280px;
+  }
+
   .elements {
     font-size: 15px;
     display: flex;

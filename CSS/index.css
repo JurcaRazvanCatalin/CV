@@ -173,6 +173,10 @@ Nav
   transform: scaleX(1);
 }
 
+#more {
+  display: none;
+}
+
 @media screen and (min-width: 992px) {
   .navbar {
     padding: 1rem 2rem;
@@ -204,6 +208,10 @@ Nav
     color: var(--main-color);
     background: transparent;
   }
+}
+
+.show-links {
+  height: 5px;
 }
 
 .hero {

@@ -165,6 +165,10 @@ p {
   transform: scaleX(1);
 }
 
+.show-links {
+  height: 5px;
+}
+
 @media screen and (min-width: 992px) {
   .navbar {
     padding: 1rem 2rem;
@@ -273,7 +277,7 @@ p {
   }
 
   .show-links {
-    height: 280px;
+    height: 5px;
   }
 
   .elements {
@@ -307,6 +311,10 @@ section {
 .time {
   position: relative;
   right: 20px;
+}
+
+.circles .full {
+  background: var(--a-color);
 }
 
 @media screen and (max-width: 400px) {

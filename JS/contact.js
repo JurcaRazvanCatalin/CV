@@ -21,3 +21,16 @@ scrollLinks.forEach(link => {
     });
   });
 });
+
+//submit
+function save_data() {
+  const name = document.getElementById('name');
+  const email = document.getElementById('email');
+  const phone = document.getElementById('phone');
+  const message = document.getElementById('message');
+  localStorage.setItem('server', name.value);
+  localStorage.setItem('server', email.value);
+  localStorage.setItem('server', phone.value);
+  localStorage.setItem('server', message.value);
+  var storedValue = localStorage.getItem('server');
+}

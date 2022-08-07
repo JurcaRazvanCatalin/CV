@@ -73,29 +73,37 @@
         </div>
         <article class="contact-form">
           <h3>contact me</h3>
-          <form action="https://formspree.io/f/xvoleenr" method="post">
+          <form
+            onsubmit="save_data()"
+            action="https://formspree.io/f/xvoleenr"
+            method="post"
+          >
             <div class="form-group">
               <input
                 type="text"
                 placeholder="name"
                 class="form-control"
+                id="name"
                 name="name"
               />
               <input
                 type="email"
                 placeholder="email"
                 class="form-control"
+                id="email"
                 name="name"
               />
               <input
                 type="name"
                 placeholder="phone number"
                 class="form-control"
+                id="phone"
                 name="name"
               />
               <textarea
                 placeholder="message"
                 name="message"
+                id="message"
                 class="form-control"
                 rows="5"
               ></textarea>

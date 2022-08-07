@@ -169,6 +169,24 @@ p {
   height: 5px;
 }
 
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.field p {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: var(--a-color);
+  font-weight: 600;
+}
+
+.field .name {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
 @media screen and (min-width: 992px) {
   .navbar {
     padding: 1rem 2rem;
@@ -256,6 +274,10 @@ p {
     margin: 20px 0;
   }
 
+  .field p {
+    margin-left: 20px;
+  }
+
   .element {
     width: 100vw;
     background: var(--white);
@@ -291,6 +313,10 @@ p {
   .time {
     position: relative;
     left: 150px;
+  }
+
+  .circles {
+    margin-left: 100px;
   }
 }
 
@@ -334,6 +360,10 @@ section {
   .time {
     position: relative;
     left: 150px;
+  }
+
+  .field p {
+    margin-left: 20px;
   }
 }
 

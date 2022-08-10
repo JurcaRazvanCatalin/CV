@@ -155,10 +155,10 @@ p {
   background: var(--a-color);
   content: '';
   position: absolute;
-  left: 0px;
+  left: 0;
   bottom: 0;
   transform: scaleX(0);
-  transition: 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .nav-link:hover::after {
@@ -167,6 +167,7 @@ p {
 
 .show-links {
   height: 5px;
+  transition: all 0.5s ease-in-out;
 }
 
 .field {
